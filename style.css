@@ -15,7 +15,7 @@ body{
 
 }
 
-h2,h3,.white{
+h2,h3,.white,.section-divider{
     color: #fff;
 }
 
@@ -117,4 +117,12 @@ a{
     max-width: 400px;
     min-width: 100px;
     border-radius: 50%;
+  }
+
+  .section-divider {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
