@@ -152,9 +152,30 @@ a{
     min-width: 100px;
 }
 
-.bottom {
-    vertical-align: middle;
+.footer-image {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100vw;
-    max-width: 100vw;
-    height: auto;
+}
+
+.footer-image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.footer-image2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
