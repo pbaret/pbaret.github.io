@@ -168,14 +168,15 @@ a{
 
 .footer-image2 {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .footer-text {
+    font-size: 3vw;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
 }
