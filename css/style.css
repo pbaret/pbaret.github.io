@@ -211,6 +211,11 @@ a{
     margin: 5px;
 }
 
+.skill p {
+    font-weight: bold;
+    color: rgb(180, 180, 180);
+}
+
 .skill-container {
     width: 100%;
     background-color: #ddd;
@@ -233,3 +238,15 @@ a{
 
   /*********************************************************************/
   
+  .text-highlight {
+    font-weight: bold;
+    color: rgb(180, 180, 180);
+  }
+
+.cv-links {
+    margin: auto;
+}
+
+.cv-links a {
+    text-align: center;
+}

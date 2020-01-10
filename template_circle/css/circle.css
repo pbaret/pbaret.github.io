@@ -46,7 +46,7 @@
     border-radius: 50%;
     float: left;
     margin: 0 0.1em 0.1em 0;
-    background-color: #cccccc;
+    background-color: #fff;
   }
   .c100 *, .c100 *:before, .c100 *:after {
     -webkit-box-sizing: content-box;
@@ -882,4 +882,9 @@
 
   .c100 {
     margin: auto;
+  }
+
+  .skill-circle p {
+    font-weight: bold;
+    color: rgb(180, 180, 180);
   }

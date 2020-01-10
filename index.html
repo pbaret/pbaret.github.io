@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="css/bootstrap_grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="template_circle/css/circle.css">
+    <link rel="stylesheet" href="flag-icon-css/css/flag-icon.min.css">
     <title>Pierre Baret Personal Website</title>
 </head>
 <body>
+    <span id="top"></span>
+
     <div class="grid-2">
         <!-- Introduction -->
         <div class="section-1">
@@ -57,10 +60,19 @@
                 <ul>Pationate of the outdoor and sports in general, my core values as human being are:</ul>
                 <ul class="color2 bold">Respect for the others</ul>
                 <ul class="color2 bold">Respect for the nature</ul>
-                <p>I am always listening for new opportunities, interesting projects and new challenges so don't hesitate to reach me.</p>
-                <img src="images/section-divider.png" alt="" class="section-divider">
+                <p>I am always listening for new opportunities, interesting projects and new challenges so don't hesitate to reach me.</p>                
             </div>
 
+            <img src="images/section-divider.png" alt="" class="section-divider">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4"><a href="#" class="cv-links">Education & Career</a></div>
+                    <div class="col-xs-4"><a href="#" class="cv-links">Download my CV.</a></div>
+                </div>
+            </div>
+
+            <img src="images/section-divider.png" alt="" class="section-divider">
 
             <h2>Skills</h2>
             <h3 class="text-content">Programming Languages</h3>
@@ -104,11 +116,10 @@
             </div>
 
             <h3 class="text-content">Framework / System / Engine</h3>
-
             <div class="container">
                 <div class="row">
                     <div class="col-xs-6 col-md-4">
-                        <div class="grid-1">
+                        <div class="grid-1 skill-circle">
                             <div class="c100 p75">
                                 <span>75%</span>
                                 <div class="slice">
@@ -120,7 +131,7 @@
                         </div>
                     </div>
                     <div class="col-xs-6 col-md-4">
-                        <div class="grid-1">
+                        <div class="grid-1 skill-circle">
                             <div class="c100 p80">
                                 <span>80%</span>
                                 <div class="slice">
@@ -132,7 +143,7 @@
                         </div>
                     </div>
                     <div class="col-xs-6 col-md-4">
-                        <div class="grid-1">
+                        <div class="grid-1 skill-circle">
                             <div class="c100 p80">
                                 <span>80%</span>
                                 <div class="slice">
@@ -144,7 +155,7 @@
                         </div>
                     </div>
                     <div class="col-xs-6 col-md-4">
-                        <div class="grid-1">
+                        <div class="grid-1 skill-circle">
                             <div class="c100 p60">
                                 <span>60%</span>
                                 <div class="slice">
@@ -156,7 +167,7 @@
                         </div>
                     </div>
                     <div class="col-xs-6 col-md-4">
-                        <div class="grid-1">
+                        <div class="grid-1 skill-circle">
                             <div class="c100 p60">
                                 <span>60%</span>
                                 <div class="slice">
@@ -168,7 +179,7 @@
                         </div>
                     </div>
                     <div class="col-xs-6 col-md-4">
-                        <div class="grid-1">
+                        <div class="grid-1 skill-circle">
                             <div class="c100 p60">
                                 <span>60%</span>
                                 <div class="slice">
@@ -183,8 +194,78 @@
             </div>
 
             <p>
-                And also: C++ Boost Library, C++ Qt5, C# .Net, Matlab/Scilab, SVN, LaTex, Microsoft Office, Visual Studio, OS Linux, Raspberry Pi... 
+                <span class="text-highlight">And also :</span>
+                C++ Boost Library, C++ Qt5, C# .Net, Matlab/Scilab, SVN, LaTex, Microsoft Office, Visual Studio, OS Linux, Raspberry Pi... 
             </p>
+
+            <h3 class="text-content">Languages</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="grid-1">
+                            <div class="c100 p100">
+                                <span>100%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>
+                                <span class="flag-icon flag-icon-fr"></span>
+                                <span class="text-highlight"> French </span>
+                                <span class="flag-icon flag-icon-fr"></span>
+                                <br>Native (C2)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="grid-1">
+                            <div class="c100 p95">
+                                <span>95%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p><span class="flag-icon flag-icon-gb"></span> English <span class="flag-icon flag-icon-gb"></span><br>(C2) 915/990 at TOEIC Test (2014)</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="grid-1">
+                            <div class="c100 p35">
+                                <span>35%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>
+                                <span class="flag-icon flag-icon-de"></span>
+                                <span class="text-highlight"> German </span>
+                                <span class="flag-icon flag-icon-de"></span>
+                                <br>(B1) Have not spoken for a long time
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="grid-1">
+                            <div class="c100 p5">
+                                <span>5%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>
+                                <span class="flag-icon flag-icon-es"></span>
+                                <span class="text-highlight"> Spanish </span>
+                                <span class="flag-icon flag-icon-es"></span>
+                                <br>Just started ;-)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <img src="images/section-divider.png" alt="" class="section-divider">
             
@@ -227,6 +308,9 @@
             
         </div>
     </div>
+
+    <a href="#top">Back to top</a>
+
     <div class="footer-image">
         <img src="images/view.jpg" alt="" class="footer-image1">
         <h2 class="footer-text">Thank you for your visit!</h2>
