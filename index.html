@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap_grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="template_circle/css/circle.css">
     <title>Pierre Baret Personal Website</title>
 </head>
 <body>
@@ -61,7 +63,131 @@
 
 
             <h2>Skills</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in maiores autem quidem obcaecati excepturi! Cupiditate eaque itaque magni voluptatibus neque nobis est dolor? Atque sunt minus ipsa asperiores. At.</p>
+            <h3 class="text-content">Programming Languages</h3>
+            <div class="grid-2">
+                <div class="skill">
+                    <p>C/C++</p>
+                    <div class="skill-container">
+                        <div class="skills skill-cplusplus">85%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>C#</p>
+                    <div class="skill-container">
+                        <div class="skills skill-csharp">80%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Python</p>
+                    <div class="skill-container">
+                        <div class="skills skill-python">70%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>R</p>
+                    <div class="skill-container">
+                        <div class="skills skill-r">70%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Git</p>
+                    <div class="skill-container">
+                        <div class="skills skill-git">70%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>HTML / CSS / JS</p>
+                    <div class="skill-container">
+                        <div class="skills skill-html">40%</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-content">Framework / System / Engine</h3>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-md-4">
+                        <div class="grid-1">
+                            <div class="c100 p75">
+                                <span>75%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>CMake</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <div class="grid-1">
+                            <div class="c100 p80">
+                                <span>80%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>OpenCV</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <div class="grid-1">
+                            <div class="c100 p80">
+                                <span>80%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>Unity 3D</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <div class="grid-1">
+                            <div class="c100 p60">
+                                <span>60%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>Arduino</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <div class="grid-1">
+                            <div class="c100 p60">
+                                <span>60%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>Tensorflow / Keras</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <div class="grid-1">
+                            <div class="c100 p60">
+                                <span>60%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>R Shiny</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                And also: C++ Boost Library, C++ Qt5, C# .Net, Matlab/Scilab, SVN, LaTex, Microsoft Office, Visual Studio, OS Linux, Raspberry Pi... 
+            </p>
+
+            <img src="images/section-divider.png" alt="" class="section-divider">
+            
             <h2>Projects</h2>
             <a href="#">Project 1</a>
             <a href="#">Project 2</a>
@@ -106,5 +232,7 @@
         <h2 class="footer-text">Thank you for your visit!</h2>
         <img src="images/section-divider.png" alt="" class="footer-image2">
     </div>
+    
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

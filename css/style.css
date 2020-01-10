@@ -1,9 +1,26 @@
 /* global */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+.grid-1{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 15px;
+}
+
+.grid-1 p{
+    text-align: center;
+    padding-top: 10px;
+}
+
 .grid-2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+}
+
+.grid-6{
+    display: grid;
+    grid-template-columns: repeat(6,3fr);
+    max-width: 50vw;
 }
 
 body{
@@ -67,6 +84,11 @@ a{
 
 .section-2 h2{
     font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-2 h3{
+    font-size: 1.4rem;
     margin-bottom: 10px;
 }
 
@@ -180,3 +202,34 @@ a{
     left: 50%;
     transform: translateX(-50%);
 }
+
+
+/* SKILLS */
+/* Container for skill bars */
+.skill {
+    padding: 5px;
+    margin: 5px;
+}
+
+.skill-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+  
+  .skill-cplusplus {border-radius: 5px; width: 85%; background-color:rgb(142, 102, 190);}
+  .skill-csharp {border-radius: 5px; width: 80%; background-color: rgb(142, 102, 190);}
+  .skill-python {border-radius: 5px; width: 70%; background-color: rgb(142, 102, 190);}
+  .skill-r {border-radius: 5px; width: 70%; background-color: rgb(142, 102, 190);}
+  .skill-git {border-radius: 5px; width: 70%; background-color: rgb(142, 102, 190);}
+  .skill-html {border-radius: 5px; width: 40%; background-color: rgb(142, 102, 190);}
+
+  /*********************************************************************/
+  
