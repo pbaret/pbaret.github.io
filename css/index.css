@@ -1,0 +1,115 @@
+/***************************************/
+/*            LEFT BAR                 */
+/***************************************/
+
+.leftbar {
+    margin-top: 50px;
+    color: var(--color3);
+    text-align: center;
+    font-weight: bold;
+}
+
+.leftbar p {
+    color: var(--color2);
+}
+
+.leftbar h2 {
+    font-size: 2.5rem;
+}
+
+.leftbar h3 {
+    font-size: 2.3rem;
+}
+
+.leftbar h2, .leftbar h3 {
+    padding-top: 50px;
+}
+
+.avatar_img {
+    vertical-align: middle;
+    width: 50%;
+    max-width: 500px;
+    min-width: 100px;
+    border-radius: 50%;
+}
+
+.code-sign{
+    margin-top: 30px;
+    font-size: 100px;
+}
+
+.social-icon {
+    color: var(--color3);
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    font-size: 2.7rem;
+    color: var(--color2);
+}
+
+.hobbies {
+    margin-top: 20px;
+    max-width: 350px;
+    width: 100%;
+}
+
+
+/***************************************/
+/*            RIGHT BAR                */
+/***************************************/
+
+
+.rightbar {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 1.1rem;
+    border-left: 1px solid var(--color2);
+}
+
+.rightbar h2, .rightbar h3 {
+    color: var(--color3);
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.rightbar p {
+    color: var(--color4);
+    font-size: 1.3rem;
+}
+
+.rightbar h2 {
+    font-size: 2.3rem;
+}
+
+.rightbar h3 {
+    font-size: 1.9rem;
+}
+
+.rightbar h4 {
+    font-size: 1.5rem;
+}
+
+
+.list-group, .list-group-item{
+    background-color: inherit;
+    color: inherit;
+    border: none;
+}
+
+.rightbar a {
+    color: var(--color3);
+    text-decoration: none;
+}
+
+.rightbar h3 a:hover {
+    color: var(--color2);
+    font-size: 2.1rem;
+}
+
+.rightbar h4 a:hover {
+    color: var(--color2);
+}
