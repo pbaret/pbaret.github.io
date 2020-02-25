@@ -7,8 +7,8 @@
     --color2: #7A7C80;
     --color3: #fff;
     --color4: rgb(180, 180, 180);
-    --color5: rgb(142, 102, 190);
-  }
+    --color5: #2c837a;
+}
 .color1 {
     color: var(--color1);
 }
@@ -24,6 +24,9 @@
 .color5 {
     color: var(--color5);
 }
+
+.border-color{border-color:var(--color5) !important}
+.bg-color{background-color:var(--color5) !important}
 
 html {
     font-size: 110%;
@@ -97,3 +100,23 @@ p {
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+#topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(255, 255, 255, 0); /* Set a background color */
+    color: var(--color5); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 26px; /* Increase font size */
+  }
+  
+  #topBtn:hover {
+      color: var(--color2)
+  }

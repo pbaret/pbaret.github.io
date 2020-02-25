@@ -1,0 +1,109 @@
+h2 {
+    padding-top: 60px;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    margin: 10px;
+    width: 20rem;
+}
+
+.card-img-bottom {
+    width: 200px;
+}
+
+.edu-link {
+    color: var(--color5)
+}
+
+#education {
+    background-color: var(--color1);
+    padding-bottom: 20px;
+}
+
+#skills {
+    color: var(--color1);
+    background-color: var(--color4);
+    margin-top: 30px;
+}
+
+.skill-bar {
+    margin-bottom: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 40%;
+}
+
+.skill-circle
+{
+    margin-bottom: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 23%;
+}
+
+.skill-circle
+{
+    margin-bottom: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 23%;
+}
+
+.lang-circle
+{
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.lang-text{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.skill-container {
+    margin-bottom: 25px;
+}
+
+.skill-container2
+{
+    background-color: rgba(50, 50, 50, 0.25);
+}
+
+#framework-title {
+    padding-top: 20px;
+}
+
+.and-also {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#career {
+    background-color: var(--color1);
+}
+
+
+.career-item {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+    width: auto;
+    color: var(--color3);
+    background-color: var(--color2);
+}
+
+/* CSS that should be displayed if width is equal to or less than 800px goes here */
+@media (max-width: 800px) {
+    .col-xs-4{
+        margin-left: 50px;
+    }
+}
+
