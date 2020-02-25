@@ -13,6 +13,10 @@ h4 {
     width: 20rem;
 }
 
+.edu-card {
+    margin-bottom: 15px;
+}
+
 .card-img-bottom {
     width: 200px;
 }
@@ -97,13 +101,43 @@ h4 {
     margin-top: 25px;
     width: auto;
     color: var(--color3);
-    background-color: var(--color2);
+    background-color: rgba(100, 100, 100, 0.25);
+}
+
+.career-item-date {
+    font-size: 0.8rem;
+    padding-left: 20px;
+}
+
+.card-header h3 {
+    color: var(--color4);
+}
+
+.card-header span {
+    color: var(--color2);
+}
+
+.card-img {
+    width: 200px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
 }
 
 /* CSS that should be displayed if width is equal to or less than 800px goes here */
 @media (max-width: 800px) {
     .col-xs-4{
         margin-left: 50px;
+    }
+}
+
+@media (min-width: 900px) {
+    .card-header h3 {
+        margin-left: 100px;
+    }
+    
+    .card-header span {
+        margin-left: 100px;
     }
 }
 
