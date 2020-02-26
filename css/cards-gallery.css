@@ -48,6 +48,10 @@
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
+.card-line {
+  margin-bottom: 25px;
+}
+
 @media (min-width: 576px) {
 
 	.gallery-block .transform-on-hover:hover {
