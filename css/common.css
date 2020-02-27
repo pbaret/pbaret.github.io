@@ -65,6 +65,10 @@ p {
     width: 100%;
 }
 
+.fa-link, .fa-external-link-alt {
+    font-size: 0.7rem;
+}
+
 .footer-container {
     position: relative;
     text-align: center;

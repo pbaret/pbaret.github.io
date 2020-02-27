@@ -170,6 +170,16 @@ h4 {
     .col-xs-4{
         margin-left: 50px;
     }
+
+    .card {
+        width: auto;
+    }
+    
+    .edu-card {
+        margin-right: 3px;
+        margin-left: 3px;
+        margin-bottom: 15px;
+    }
 }
 
 @media (min-width: 900px) {
