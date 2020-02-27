@@ -124,6 +124,47 @@ h4 {
     display:block;
 }
 
+.card-body h3 {
+    color: var(--color4);
+}
+
+.card-body p {
+    color: var(--color6);
+    text-align: justify;
+}
+
+.card-body a {
+    color: var(--color7);
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    color: var(--color5);
+}
+
+.list, .list-item {
+    font-weight: bold;
+    color: var(--color7);
+    text-align: center;
+    list-style-type: none;
+}
+
+.vie {
+    color: var(--color7);
+    font-weight: bold;
+}
+
+.skills-used {
+    text-align: left;
+    margin-left: 25px;
+    color: var(--color5);
+    font-size: 0.9rem;
+}
+
+#vie-def {
+    padding-top: 25px;
+}
+
 /* CSS that should be displayed if width is equal to or less than 800px goes here */
 @media (max-width: 800px) {
     .col-xs-4{

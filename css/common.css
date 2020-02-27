@@ -8,22 +8,16 @@
     --color3: #fff;
     --color4: rgb(180, 180, 180);
     --color5: #2c837a;
+    --color6: rgb(150, 150, 150);
+    --color7: #40c2b5;
 }
-.color1 {
-    color: var(--color1);
-}
-.color2 {
-    color: var(--color2);
-}
-.color3 {
-    color: var(--color3);
-}
-.color4 {
-    color: var(--color4);
-}
-.color5 {
-    color: var(--color5);
-}
+.color1 { color: var(--color1); }
+.color2 { color: var(--color2); }
+.color3 { color: var(--color3); }
+.color4 { color: var(--color4); }
+.color5 { color: var(--color5); }
+.color6 { color: var(--color6); }
+.color7 { color: var(--color7); }
 
 .border-color{border-color:var(--color5) !important}
 .bg-color{background-color:var(--color5) !important}
@@ -104,7 +98,7 @@ p {
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: rgba(255, 255, 255, 0); /* Set a background color */
-    color: var(--color5); /* Text color */
+    color: var(--color7); /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
@@ -112,5 +106,5 @@ p {
   }
   
   #topBtn:hover {
-      color: var(--color2)
+      color: var(--color5)
   }
