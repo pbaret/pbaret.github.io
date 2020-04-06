@@ -100,6 +100,16 @@ p {
     text-align: center;
 }
 
+@media (max-width: 800px) {
+    .project-footer-container {
+        margin-top: 75px;
+    }
+
+    .project-footer-container h5 {
+        font-size: 0.9rem;
+    }
+}
+
 #topBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -137,6 +147,8 @@ p {
 
 @media (max-width: 800px) {
     #btnHome {
-        position: absolute; /* Fixed/sticky position */
+        position: relative;
+        top: 15px;
+        left: 15px;
     }
 }
