@@ -10,6 +10,7 @@
     --color5: #2c837a;
     --color6: rgb(150, 150, 150);
     --color7: #40c2b5;
+    --color8: rgb(52, 52, 54);
 }
 .color1 { color: var(--color1); }
 .color2 { color: var(--color2); }
