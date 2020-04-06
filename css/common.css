@@ -134,3 +134,9 @@ p {
     color: var(--color2);
     text-decoration: none;
 }
+
+@media (max-width: 800px) {
+    #btnHome {
+        position: absolute; /* Fixed/sticky position */
+    }
+}
