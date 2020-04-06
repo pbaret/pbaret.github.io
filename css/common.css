@@ -94,6 +94,14 @@ p {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.project-footer-container {
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    height: 50px;
+}
+
 #topBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -108,8 +116,23 @@ p {
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 26px; /* Increase font size */
-  }
+}
   
-  #topBtn:hover {
+#topBtn:hover {
       color: var(--color5)
   }
+
+#btnHome {
+    position: fixed; /* Fixed/sticky position */
+    top: 15px; /* Place the button at the bottom of the page */
+    left: 15px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    font-size: 26px; /* Increase font size */
+    color: var(--color3);
+    text-decoration: none;
+}
+
+#btnHome:hover {
+    color: var(--color2);
+    text-decoration: none;
+}
