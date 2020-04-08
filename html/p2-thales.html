@@ -50,13 +50,17 @@
         <div class="section-divider"></div>
         <div class="container">
             <div class="row">
-                <p>
-                    My internship was part of the <span class="bold color7">Voxelo Project</span> (in partnership with ANR and CEA List) whose goal is to 
-                    reconstruct a knee in 3D from XRay images in order to diagnose early osteoarthritis lowering XRay dose and cost.
-                </p>
+                <div class="col-sm-12">
+                    <p>
+                        My internship was part of the <span class="bold color7">Voxelo Project</span> (in partnership with ANR and CEA List) whose goal is to 
+                        reconstruct a knee in 3D from XRay images in order to diagnose early osteoarthritis lowering XRay dose and cost.
+                    </p>
+                </div>
             </div>
             <div class="row">
-                <img id="img1" class="image-center" src="../images/projects/p2/xray_arthrose.jpg" alt="X-Ray Arthrose Image">
+                <div class="col-sm-12">
+                    <img id="img1" class="img-fluid image-center" src="../images/projects/p2/xray_arthrose.jpg" alt="X-Ray Arthrose Image">
+                </div>
             </div>
             <div class="row">
                 <div class="col-sm-6 my-auto">
@@ -68,7 +72,7 @@
                     </p>
                 </div>
                 <div class="col-sm-6">
-                    <img id="img2" class="image-center" src="../images/projects/p2/cbct.png" alt="CBCT Illustration">
+                    <img id="img2" class="img-fluid image-center" src="../images/projects/p2/cbct.png" alt="CBCT Illustration">
                 </div>
             </div>
         </div>
@@ -80,19 +84,21 @@
         <div class="section-divider"></div>
         <div class="container">
             <div class="row">
-                <p>
-                    The calibration is a very important step in the process because it determines the accuracy of the 3D reconstruction. 
-                    <span class="bold color7">Calibrate the system</span> means find for each angle of view what is linking the 3D world 
-                    of the scene to the 2D world of the image. This "link" can be seen as a <span class="bold">geometric transformation called a projection</span>. 
-                    As I chose to modelize the system as a pinhole camera model, this transformation is fully represented by the 
-                    <span class="color7">projection matrix</span>.    
-                </p>
+                <div class="col-sm-12">
+                    <p>
+                        The calibration is a very important step in the process because it determines the accuracy of the 3D reconstruction. 
+                        <span class="bold color7">Calibrate the system</span> means find for each angle of view what is linking the 3D world 
+                        of the scene to the 2D world of the image. This "link" can be seen as a <span class="bold">geometric transformation called a projection</span>. 
+                        As I chose to modelize the system as a pinhole camera model, this transformation is fully represented by the 
+                        <span class="color7">projection matrix</span>.    
+                    </p>
+                </div>
             </div>
             <div class="row">
                 <div class="col-sm-6">
-                    <img id="img3" class="image-center" src="../images/projects/p2/pinhole.png" alt="Pinhole model Illustration">
+                    <img id="img3" class="img-fluid image-center" src="../images/projects/p2/pinhole.png" alt="Pinhole model Illustration">
                 </div>
-                <div id="sec3-side-col" class="col-sm-6">
+                <div class="col-sm-6" id="sec3-side-col">
                     <h4>The Pinhole Model</h4>
                     <p>
                         The pinhole camera model reprents how a point of the 3D space is projected to a 2D plan to form an image. 
@@ -114,15 +120,17 @@
                 </div>
             </div>
             <div class="row" style="margin-top: 20px;">
-                <p>
-                    To calibrate a pinhole model, we must find either the 12 coefficients of the 3x4 matrix (implicit calibration) or the 
-                    10 parameters (explicit calibration) of its decomposition. To do so, we take an image of a target in which we know the exact position 
-                    of a set of points, we detect those points in the image and solve an equation with numerical methods.
-                </p>
-                <p>
-                    I can't give more details about the process, but the calibration module that I developped, reached an accuracy far 
-                    better than expected at the beginnning of the internship.   
-                </p>
+                <div class="col-sm-12">
+                    <p>
+                        To calibrate a pinhole model, we must find either the 12 coefficients of the 3x4 matrix (implicit calibration) or the 
+                        10 parameters (explicit calibration) of its decomposition. To do so, we take an image of a target in which we know the exact position 
+                        of a set of points, we detect those points in the image and solve an equation with numerical methods.
+                    </p>
+                    <p>
+                        I can't give more details about the process, but the calibration module that I developped, reached an accuracy far 
+                        better than expected at the beginnning of the internship.   
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -133,14 +141,18 @@
         <div class="section-divider"></div>
         <div class="container">
             <div class="row">
-                <img id="img-results" class="image-center" src="../images/projects/p2/genou3Dcoupe.jpg" alt="Reconstruction results on a Knee">
-            </div>                
+                <div class="col-sm-12">
+                    <img id="img-results" class="img-fluid image-center" src="../images/projects/p2/genou3Dcoupe.jpg" alt="Reconstruction results on a Knee">
+                </div>    
+            </div>
             <div class="row">
-                <p>
-                    Example of a high resolution 3D reconstruction of a knee.<br>
-                    The accuracy of my calibration module allows the reconstruction algorithm to be accurate enough to see internal 
-                    structures of bones thanks to far better reprojection errors for every matrices.
-                </p>
+                <div class="col-sm-12">
+                    <p>
+                        Example of a high resolution 3D reconstruction of a knee.<br>
+                        The accuracy of my calibration module allows the reconstruction algorithm to be accurate enough to see internal 
+                        structures of bones thanks to far better reprojection errors for every matrices.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -184,16 +196,18 @@
                 </div>
             </div>                
             <div class="row">
-                <p>
-                    I worked in the 
-                    <a id="MIS-link" href="https://www.thalesgroup.com/en/worldwide/microwave-imaging-sub-systems">
-                        Microwave and Imaging Subsystems (MIS)<i class="fas fa-link"></i>
-                    </a> 
-                    division. 
-                    Its products are at the heart of today's most complex high-tech systems and are used to generate and amplify Radio 
-                    Frequencies and microwave power sources. These products are found in satellites, radars, missile seekers, particle 
-                    accelerators, but also in most of the equipment for radiological imaging.
-                </p>
+                <div class="col-sm-12">
+                    <p>
+                        I worked in the 
+                        <a id="MIS-link" href="https://www.thalesgroup.com/en/worldwide/microwave-imaging-sub-systems">
+                            Microwave and Imaging Subsystems (MIS)<i class="fas fa-link"></i>
+                        </a> 
+                        division. 
+                        Its products are at the heart of today's most complex high-tech systems and are used to generate and amplify Radio 
+                        Frequencies and microwave power sources. These products are found in satellites, radars, missile seekers, particle 
+                        accelerators, but also in most of the equipment for radiological imaging.
+                    </p>
+                </div>                
             </div>
         </div>
     </section>
