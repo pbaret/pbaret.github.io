@@ -16,9 +16,9 @@
     <!-- Project introduction section -->
     <section id="intro" class="section-light">
         <div class="container">
-            <h2 class="section-title">3D X-Ray Tomography<br>Geometric Calibration</h2>
-            <div class="section-divider"></div>          
-            <div class="row row justify-content-end">
+            <h2 class="section-title">3D X-RAY TOMOGRAPHY<br>GEOMETRIC CALIBRATION</h2>
+            <div class="section-divider"></div>
+            <div class="row justify-content-end">
                 <div class="col-sm-8">
                     <h3>In short</h3>
                     <p class="short-txt"> 
@@ -41,16 +41,163 @@
                     <img id="intro-img" src="../images/projects/p2/project_thumbnail.jpg" alt="">
                 </div>
             </div>
-        </div> <!-- /.container -->
-    </section>
-
-    <section id="sec2" class="section-dark">
-        <h2 class="section-title">Section 2</h2> 
-
-        <div class="container">
-            Hello
         </div>
     </section>
+
+    <!-- Project Brief Section -->
+    <section id="sec2" class="section-dark">
+        <h2 class="section-title">THE PROJECT</h2>
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="row">
+                <p>
+                    My internship was part of the <span class="bold color7">Voxelo Project</span> (in partnership with ANR and CEA List) whose goal is to 
+                    reconstruct a knee in 3D from XRay images in order to diagnose early osteoarthritis lowering XRay dose and cost.
+                </p>
+            </div>
+            <div class="row">
+                <img id="img1" class="image-center" src="../images/projects/p2/xray_arthrose.jpg" alt="X-Ray Arthrose Image">
+            </div>
+            <div class="row">
+                <div class="col-sm-6 my-auto">
+                    <h3>3D X-RAY TOMOGRAPHY</h3>
+                    <p>
+                        Cone Beam Computed Tomography (CBCT) is a medical imaging technique consisting of reconstructing an object in 
+                        3D from a set of X-Ray images taken at different angles of view. The aim is to analyse precisely with a computer 
+                        the 3D object (volume, or the mesh) and to be able to "see details inside it".
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <img id="img2" class="image-center" src="../images/projects/p2/cbct.png" alt="CBCT Illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calibration Section -->
+    <section id="sec3" class="section-light">
+        <h2 class="section-title">GEOMETRIC CALIBRATION</h2>
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="row">
+                <p>
+                    The calibration is a very important step in the process because it determines the accuracy of the 3D reconstruction. 
+                    <span class="bold color7">Calibrate the system</span> means find for each angle of view what is linking the 3D world 
+                    of the scene to the 2D world of the image. This "link" can be seen as a <span class="bold">geometric transformation called a projection</span>. 
+                    As I chose to modelize the system as a pinhole camera model, this transformation is fully represented by the 
+                    <span class="color7">projection matrix</span>.    
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img id="img3" class="image-center" src="../images/projects/p2/pinhole.png" alt="Pinhole model Illustration">
+                </div>
+                <div id="sec3-side-col" class="col-sm-6">
+                    <h4>The Pinhole Model</h4>
+                    <p>
+                        The pinhole camera model reprents how a point of the 3D space is projected to a 2D plan to form an image. 
+                        There are 3 coordinates systems in the model: Rw (for the 3D world), Rc (for the camera) and Rim (for the 2D 
+                        image plan).
+                    </p>
+                    <p>
+                        The projection matrix is the 3x4 matrix M that links Rw to Rim:
+                    </p>
+                    <img id="img-equation1" class="image-center" src="../images/projects/p2/equation1.png" alt="Projection equation">
+                    <p>
+                        M can be decomposed into 3 successives geometric transformations:
+                    </p>
+                    <img id="img-equation2" class="image-center" src="../images/projects/p2/equation2.png" alt="Decomposition of M">
+                    <p>
+                        It is then a 3x4 matrix depending on 10 parameters:
+                    </p>
+                    <img id="img-equation3" class="image-center" src="../images/projects/p2/equation3.png" alt="The 10 parameters of M">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <p>
+                    To calibrate a pinhole model, we must find either the 12 coefficients of the 3x4 matrix (implicit calibration) or the 
+                    10 parameters (explicit calibration) of its decomposition. To do so, we take an image of a target in which we know the exact position 
+                    of a set of points, we detect those points in the image and solve an equation with numerical methods.
+                </p>
+                <p>
+                    I can't give more details about the process, but the calibration module that I developped, reached an accuracy far 
+                    better than expected at the beginnning of the internship.   
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Results Section -->
+    <section id="sec4" class="section-dark">
+        <h2 class="section-title">RESULTS</h2>
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="row">
+                <img id="img-results" class="image-center" src="../images/projects/p2/genou3Dcoupe.jpg" alt="Reconstruction results on a Knee">
+            </div>                
+            <div class="row">
+                <p>
+                    Example of a high resolution 3D reconstruction of a knee.<br>
+                    The accuracy of my calibration module allows the reconstruction algorithm to be accurate enough to see internal 
+                    structures of bones thanks to far better reprojection errors for every matrices.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Thales Section -->
+    <section id="sec5" class="section-light">
+        <h2 class="section-title"><img src="../images/logo-thales.png" alt="About Thales" style="max-width: 200px;"></h2>
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 my-auto">
+                    <p>
+                        <span class="bold color7">Thales Group</span> is a French multinational company that designs and builds electrical 
+                        systems and provides services for the <span class="bold color7">aerospace, defence, transportation and security</span> 
+                        markets. The group employs around 70 000 persons all around the world and has a revenue of more than 14 billion € (2014).
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <div id="thalesImgCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                        <ol class="carousel-indicators">
+                            <li data-target="#thalesImgCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#thalesImgCarousel" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block img-carousel" src="../images/projects/p2/thales_buisness.png" alt="Thales company">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-carousel" src="../images/projects/p2/thales_radiology_0.jpg" alt="Thales Radiology">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#thalesImgCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#thalesImgCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>    
+                </div>
+            </div>                
+            <div class="row">
+                <p>
+                    I worked in the 
+                    <a id="MIS-link" href="https://www.thalesgroup.com/en/worldwide/microwave-imaging-sub-systems">
+                        Microwave and Imaging Subsystems (MIS)<i class="fas fa-link"></i>
+                    </a> 
+                    division. 
+                    Its products are at the heart of today's most complex high-tech systems and are used to generate and amplify Radio 
+                    Frequencies and microwave power sources. These products are found in satellites, radars, missile seekers, particle 
+                    accelerators, but also in most of the equipment for radiological imaging.
+                </p>
+            </div>
+        </div>
+    </section>
+
 
     <button onclick="topFunction()" id="topBtn" title="Back to top"><i class="fas fa-arrow-circle-up"></i></button>
 

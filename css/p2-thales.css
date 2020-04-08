@@ -20,17 +20,17 @@ h2, h3 {
     color: var(--color2);
 }
 
-.section-light h2, .section-light h3 {
+.section-light h2, .section-light h3, .section-light h4 {
     color: var(--color8);
 }
 
 .section-dark {
     background-color: var(--color1);
-    color: var(--color2);
+    color: var(--color6);
 }
 
-.section-dark h2, .section-dark h3 {
-    color: var(--color6);
+.section-dark h2, .section-dark h3, .section-dark h4 {
+    color: var(--color3);
 }
 
 .project-footer-container {
@@ -65,4 +65,101 @@ h2, h3 {
 
 #intro {
     padding-bottom: 50px;
+}
+
+#sec2 p {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+#sec2 .row {
+    text-align: justify;
+    margin-top: 50px;
+}
+
+#sec2 {
+    padding-bottom: 50px;
+}
+
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#img1 {    
+    width: 350px;
+    height: auto;
+}
+
+#img2 {
+    max-width: 400px;
+    height: auto;
+}
+
+#sec3 p {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+#img3 {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+#sec3-side-col * {
+    margin-top: 20px;
+}
+
+#img-equation1, #img-equation2, #img-equation3
+{
+    max-width: 300px;
+    height: auto;    
+} 
+
+#img-equation1 {
+    max-width: 200px;
+}
+
+#img-results {
+    max-width: 100%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#sec4 p {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    padding-bottom: 20px;
+}
+
+#MIS-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color7);
+}
+
+.img-carousel {
+    display: block;
+    max-height: 400px;
+    width: auto;
+}
+
+#thalesImgCarousel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    max-height: 465px;
+}
+
+#sec5 p {
+    padding-top: 20px;
+    text-align: justify;
+    font-size: 0.9rem;
 }
