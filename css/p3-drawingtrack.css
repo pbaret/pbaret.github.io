@@ -1,159 +1,145 @@
-body {
-    background-color: var(--color3);
-    color: var(--color2);
-}
-
 section {
     padding-top: 50px;
+}
+
+@media (min-width: 800px) {
+    .margin-fluid-container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 h2, h3 {
     font-weight: bold;
 }
 
-.section-title {
-    text-align: center;
-}
-
-.section-light {
-    background-color: var(--color3);
-    color: var(--color2);
-}
-
-.section-light h2, .section-light h3, .section-light h4 {
-    color: var(--color8);
-}
-
-.section-dark {
-    background-color: var(--color1);
-    color: var(--color6);
-}
-
-.section-dark h2, .section-dark h3, .section-dark h4 {
-    color: var(--color3);
-}
-
 .project-footer-container {
     padding-bottom: 20px;
 }
 
-.short-txt {
-    font-size: 0.9rem;
-    text-align: justify;
-}
-
-#intro ul {
-    font-size: 0.9rem;
-    text-align: center;
-    list-style: inside;
-}
-
-#intro li {
-    list-style-type: none;
-    padding-top: 10px;
-}
-
-.techno-txt {
-    font-size: 0.8rem;
-    color: var(--color5);
+.title {
     text-align: center;
 }
 
-#intro {
-    padding-bottom: 50px;
+.title-left {
+    text-align: left;
+    padding-left: 25px;
 }
 
-#sec2 p {
+p {
     text-align: justify;
     font-size: 0.9rem;
 }
 
-#sec2 .row {
-    text-align: justify;
-    margin-top: 50px;
+#intro-section {
+    margin-top: -55px;
+    padding-top: 105px;
 }
 
-#sec2 {
-    padding-bottom: 50px;
+#intro-section .col-md-6 {
+    padding-bottom: 25px;
 }
 
-.image-center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
+#prototype-section .col-md-12 * {
+    padding-bottom: 25px;
 }
 
-#img1 {    
-    width: 350px;
-    height: auto;
+#video-section {
+    padding-bottom: 100px;
 }
 
-#img2 {
+#videos-carousel .carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    left: 0px;
+    z-index: 10;
+    color: var(--color3);
+    text-align:center;
+    bottom: 0px;
+}
+
+#videos-carousel .carousel-caption p, #videos-carousel .carousel-caption h3 {
+    text-align: center;
+    color: var(--color3);
+}
+
+#videos-carousel .carousel-control-prev {
+    top: 90%;
+    left: 15%;
+    z-index: 10;
+}
+
+#videos-carousel .carousel-control-next {
+    top: 90%;
+    right: 15%;
+    z-index: 10;
+}
+
+.modal-lg {
+    max-width: 80% !important;
+}
+
+#myModal {
+    max-height: 100vh;
+}
+
+.img-gallery-item {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
+    margin: auto;
 }
 
-#sec3 p {
-    text-align: justify;
-    font-size: 0.9rem;
+.carousel-caption-dark h5 {
+    color: var(--color1);
+    text-align: center;
 }
 
-#img3 {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: auto;
-    margin-top: auto;
+.carousel-caption-dark p {
+    color: var(--color2);
+    text-align: center;
 }
 
-#sec3-side-col * {
-    margin-top: 20px;
+.carousel-caption-light h5 {
+    color: var(--color3);
+    text-align: center;
 }
 
-#img-equation1, #img-equation2, #img-equation3
-{
-    max-width: 300px;
-    height: auto;    
-} 
+.carousel-caption-light p {
+    color: var(--color4);
+    text-align: center;
+}
 
-#img-equation1 {
+#myModal {
+    position: fixed;
+}
+
+.modal-body .carousel-indicators li {
+    background-color: var(--color2);  
+}
+
+.modal-body .carousel-indicators .active {
+    background-color: var(--color1);
+}
+
+.row-thumbnails {
+    min-height: 200px;
+    padding: 10px;
+}
+
+.div-thumbnails {
+    height: 200px;
+    width: 200px;
+    background-color: var(--color3);
+    border-radius: .25rem;
+    border: 1px solid var(--color4);
+    margin: 10px 10px ;
+    display: flex;
+}
+
+.div-thumbnails img {
     max-width: 200px;
-}
-
-#img-results {
-    max-width: 100%;
-    height: auto;
-}
-
-#sec4 p {
-    padding-top: 10px;
-    text-align: center;
-    font-size: 0.9rem;
-    padding-bottom: 20px;
-}
-
-#MIS-link {
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--color7);
-}
-
-.img-carousel {
-    display: block;
-    max-height: 400px;
-    width: auto;
-}
-
-#thalesImgCarousel {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 500px;
-    max-height: 465px;
-}
-
-#sec5 p {
-    padding-top: 20px;
-    text-align: justify;
-    font-size: 0.9rem;
+    max-height: 200px;
+    margin: auto auto;
+    padding: 5px;
 }
