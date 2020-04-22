@@ -137,6 +137,12 @@ p {
     display: flex;
 }
 
+.div-thumbnails:hover {
+    outline: 5px solid var(--color4);    
+    border-radius: 0rem;
+}
+
+
 .div-thumbnails img {
     max-width: 200px;
     max-height: 200px;
