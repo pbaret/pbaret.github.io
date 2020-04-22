@@ -143,3 +143,10 @@ p {
     margin: auto auto;
     padding: 5px;
 }
+
+@media (max-width: 475px) {
+    .div-thumbnails {
+        margin-left: auto ;
+        margin-right: auto;
+    }
+}
