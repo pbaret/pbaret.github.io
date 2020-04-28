@@ -1,0 +1,115 @@
+section {
+    padding-top: 50px;
+}
+
+@media (min-width: 800px) {
+    .margin-fluid-container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+h2, h3 {
+    font-weight: bold;
+}
+
+.project-footer-container {
+    padding-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title-left {
+    text-align: left;
+    padding-left: 25px;
+}
+
+p {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+#intro-section {
+    margin-top: -55px;
+    padding-top: 105px;
+}
+
+#intro-section .col-md-6 {
+    padding-bottom: 25px;
+}
+
+#internship-section .row {
+    padding-bottom: 25px;
+}
+
+#internship-section {
+    padding-bottom: 25px;
+}
+
+#games-section .row {
+    padding-bottom: 25px;
+}
+
+#games-section {
+    padding-bottom: 25px;
+}
+
+.img-carousel {
+    display: block;
+    max-height: 400px;
+    width: auto;
+}
+
+#gallery-section {
+    padding-bottom: 100px;
+}
+
+#galleryCarousel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    max-height: 600px;
+}
+
+#galleryCarousel .carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    left: 0px;
+    z-index: 10;
+    color: var(--color3);
+    text-align:center;
+}
+
+@media (min-width: 500px) {
+    .carousel-indicators {
+        top: 93%;
+    }
+}
+
+@media (max-width: 500px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+#galleryCarousel .carousel-caption p {
+    text-align: center;
+    color: var(--color3);
+    padding-top: 10px;
+}
+
+#galleryCarousel .carousel-control-prev {
+    top: 92%;
+    left: 10%;
+    z-index: 10;
+}
+
+#galleryCarousel .carousel-control-next {
+    top: 92%;
+    right: 10%;
+    z-index: 10;
+}
