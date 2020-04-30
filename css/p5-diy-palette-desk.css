@@ -1,0 +1,107 @@
+#section1{
+    padding-top: 50px;
+}
+
+#section1 p {
+    text-align: justify;
+}
+
+@media (max-width: 760px) {
+    .sec1-txt {
+        padding-top: 25px;
+    }
+}
+
+.sec1-second-row{
+    padding-top: 25px;
+}
+
+#section1 a {
+    color: var(--color5);
+}
+
+#section1 ol > li {
+    padding-top: 25px;
+}
+
+
+.modal-lg {
+    max-width: 80% !important;
+}
+
+#myModal {
+    max-height: 100vh;
+}
+
+.img-gallery-item {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.carousel-caption-dark h5 {
+    color: var(--color1);
+    text-align: center;
+}
+
+.carousel-caption-dark p {
+    color: var(--color2);
+    text-align: center;
+}
+
+.carousel-caption-light h5 {
+    color: var(--color3);
+    text-align: center;
+}
+
+.carousel-caption-light p {
+    color: var(--color4);
+    text-align: center;
+}
+
+#myModal {
+    position: fixed;
+}
+
+.modal-body .carousel-indicators li {
+    background-color: var(--color2);  
+}
+
+.modal-body .carousel-indicators .active {
+    background-color: var(--color1);
+}
+
+.row-thumbnails {
+    min-height: 200px;
+    padding: 10px;
+}
+
+.div-thumbnails {
+    height: 200px;
+    width: 200px;
+    background-color: var(--color3);
+    border-radius: .25rem;
+    border: 1px solid var(--color4);
+    margin: 10px 10px ;
+    display: flex;
+}
+
+.div-thumbnails:hover {
+    outline: 5px solid var(--color4);    
+    border-radius: 0rem;
+}
+
+
+.div-thumbnails img {
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto auto;
+    padding: 5px;
+}
+
+@media (max-width: 475px) {
+    .div-thumbnails {
+        margin-left: auto ;
+        margin-right: auto;
+    }
+}
