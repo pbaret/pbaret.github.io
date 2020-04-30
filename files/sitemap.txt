@@ -5,10 +5,12 @@ https://pbaret.github.io/html/p1-website.html
 https://pbaret.github.io/html/p2-thales.html
 https://pbaret.github.io/html/p3-drawingtrack.html
 https://pbaret.github.io/html/p4-osteofight.html
+https://pbaret.github.io/html/p5-diy-palette-desk.html
 http://pbaret.github.io/
 http://pbaret.github.io/index.html
 http://pbaret.github.io/html/cv.html
 http://pbaret.github.io/html/p1-website.html
 http://pbaret.github.io/html/p2-thales.html
 http://pbaret.github.io/html/p3-drawingtrack.html
-https://pbaret.github.io/html/p4-osteofight.html
+http://pbaret.github.io/html/p4-osteofight.html
+http://pbaret.github.io/html/p5-diy-palette-desk.html
