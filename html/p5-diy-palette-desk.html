@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/common.css">
     <link rel="stylesheet" type="text/css" href="../css/p5-diy-palette-desk.css">
+
+    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
 </head>
 <body>
 
@@ -62,9 +70,13 @@
                                     <li>2 planks of 20x14 cm</li>
                                     <li>1 plank of 72x14 cm</li>
                                 </ul>
+                                <img style="padding-top: 15px;" class="img-fluid d-block m-auto" src="../images/projects/p5/diy-palette-desk-list.png" alt="Planks list">
                             </li>
                             <li>Varnish and sand with x120 sands the planks (applying varnish is harder once the desk is assembled)</li>
-                            <li>Assemble the desk</li>
+                            <li>
+                                Assemble the desk
+                                <img style="padding-top: 15px;" class="img-fluid d-block m-auto" src="../images/projects/p5/diy-palette-desk-assembled.png" alt="desk assembled">
+                            </li>
                             <li>I varnished again the outside of the desk for extra protection</li>
                             <li>Fix the legs</li>
                         </ol>
@@ -81,7 +93,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <p>
-                        Feel free to download the <a href="../files/projects/p5-diy-palette-desk/diy-palette-desk.stl">3D .stl blueprint file</a> that I made for this project.
+                        Feel free to download the <a href="../files/projects/p5-diy-palette-desk/assembled.3mf">3D .3mf blueprint file</a> that I made for this project.
                     </p>
                     <p>
                         It show how the different planks are composing the final desk.
@@ -90,8 +102,21 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fpbaret.github.io%2Ffiles%2Fprojects%2Fp5-diy-palette-desk%2Fdiy-palette-desk.stl&shading=flat&noborder=no&orientation=top&edges=yes&bgcolor=transparent&color=brown" style="border:0;margin:0;width:100%;height:80vh;"></iframe>
-                </div>
+                    <!--<model-viewer class="model3d" src="https://cdn.glitch.com/8d216299-d39c-430c-9138-e4a1128bad7e%2Fassembled.glb?v=1590591971088"
+                        camera-controls
+                        camera-orbit="-90deg 0deg 100%"
+                        exposure="0.5"
+                        poster="../images/projects/p5/diy-palette-desk-assembled.png"
+                        alt="3D blueprint of the desk">
+                    </model-viewer>-->
+                    <model-viewer class="model3d" src="../files/projects/p5-diy-palette-desk/assembled.glb"
+                        camera-controls
+                        camera-orbit="-90deg 0deg 100%"
+                        exposure="0.5"
+                        poster="../images/projects/p5/diy-palette-desk-assembled.png"
+                        alt="3D blueprint of the desk">
+                    </model-viewer>
+                    <!--<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fpbaret.github.io%2Ffiles%2Fprojects%2Fp5-diy-palette-desk%2Fdiy-palette-desk.stl&shading=flat&noborder=no&orientation=top&edges=yes&bgcolor=transparent&color=brown" style="border:0;margin:0;width:100%;height:80vh;"></iframe>-->                </div>
             </div>
         </div>
     </section>
@@ -230,7 +255,6 @@
             
         </div>
     </section>
-
     
     <button onclick="topFunction()" id="topBtn" title="Back to top"><i class="fas fa-arrow-circle-up"></i></button>
 
@@ -242,4 +266,14 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/common.js"></script>
 
+
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+    </script>
+
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script nomodule
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+    </script>
 </body>
