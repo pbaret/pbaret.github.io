@@ -93,30 +93,55 @@
             <div class="row">
                 <div class="col-md-12">
                     <p>
-                        Feel free to download the <a href="../files/projects/p5-diy-palette-desk/assembled.3mf">3D .3mf blueprint file</a> that I made for this project.
+                        Feel free to download the <a href="../files/projects/p5-diy-palette-desk/diy-palette-desk-3d-blueprint.rar">3D files</a> that I made as blueprint for this project.
                     </p>
                     <p>
-                        It show how the different planks are composing the final desk.
+                        It shows how the different planks are composing the final desk, just like in the following 3d views:
                     </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <!--<model-viewer class="model3d" src="https://cdn.glitch.com/8d216299-d39c-430c-9138-e4a1128bad7e%2Fassembled.glb?v=1590591971088"
-                        camera-controls
-                        camera-orbit="-90deg 0deg 100%"
-                        exposure="0.5"
-                        poster="../images/projects/p5/diy-palette-desk-assembled.png"
-                        alt="3D blueprint of the desk">
-                    </model-viewer>-->
-                    <model-viewer class="model3d" src="../files/projects/p5-diy-palette-desk/assembled.glb"
-                        camera-controls
-                        camera-orbit="-90deg 0deg 100%"
-                        exposure="0.5"
-                        poster="../images/projects/p5/diy-palette-desk-assembled.png"
-                        alt="3D blueprint of the desk">
-                    </model-viewer>
-                    <!--<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fpbaret.github.io%2Ffiles%2Fprojects%2Fp5-diy-palette-desk%2Fdiy-palette-desk.stl&shading=flat&noborder=no&orientation=top&edges=yes&bgcolor=transparent&color=brown" style="border:0;margin:0;width:100%;height:80vh;"></iframe>-->                </div>
+                    <div id="carousel3D" class="carousel" data-interval="0">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel3D" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel3D" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <model-viewer class="model3d" src="../files/projects/p5-diy-palette-desk/assembled.glb"
+                                    camera-controls
+                                    camera-orbit="0deg 75deg 100%"
+                                    exposure="0.5"
+                                    poster=""
+                                    alt="3D blueprint of the desk"
+                                    style="--poster-color: transparent;">
+                                </model-viewer>
+                            </div>
+                            <div class="carousel-item">
+                                <model-viewer class="model3d" src="../files/projects/p5-diy-palette-desk/anim.glb"
+                                    camera-controls
+                                    autoplay
+                                    camera-orbit="0deg 75deg 100%"
+                                    exposure="0.5"
+                                    alt="3D blueprint of the desk"
+                                    style="--poster-color: transparent;">
+                                </model-viewer>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel3D" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel3D" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    
+                    <!--<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fpbaret.github.io%2Ffiles%2Fprojects%2Fp5-diy-palette-desk%2Fdiy-palette-desk.stl&shading=flat&noborder=no&orientation=top&edges=yes&bgcolor=transparent&color=brown" style="border:0;margin:0;width:100%;height:80vh;"></iframe>-->                
+                </div>
+                <div class="col-md-12">
+                    <!--<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fpbaret.github.io%2Ffiles%2Fprojects%2Fp5-diy-palette-desk%2Fdiy-palette-desk.stl&shading=flat&noborder=no&orientation=top&edges=yes&bgcolor=transparent&color=brown" style="border:0;margin:0;width:100%;height:80vh;"></iframe>-->                
+                </div>
             </div>
         </div>
     </section>
