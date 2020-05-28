@@ -17,7 +17,7 @@
     <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
 
 </head>
-<body>
+<body onload="hiderBtn()">
 
     <a id="btnHome" class="btn btn-dark" href="../index.html#project-gallery" role="button"><i class="fas fa-home"></i></a>
 
@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" style="padding-bottom: 25px;">
                     <div id="carousel3D" class="carousel" data-interval="0">
                         <ol class="carousel-indicators">
                             <li data-target="#carousel3D" data-slide-to="0" class="active"></li>
@@ -119,13 +119,22 @@
                                 </model-viewer>
                             </div>
                             <div class="carousel-item">
-                                <model-viewer class="model3d" src="../files/projects/p5-diy-palette-desk/anim.glb"
+                                <model-viewer id="animated" class="model3d" src="../files/projects/p5-diy-palette-desk/anim.glb"
                                     camera-controls
                                     autoplay
                                     camera-orbit="0deg 75deg 100%"
                                     exposure="0.5"
                                     alt="3D blueprint of the desk"
                                     style="--poster-color: transparent;">
+                                    <div id="controllerContainer">
+                                        <div id="controllerBtn">
+                                            <p id="playBtn" onclick="play()"><i class="fas fa-play"></i></p>
+                                            <p id="pauseBtn" onclick="pause()"><i class="fas fa-pause"></i></p>
+                                        </div>
+                                        <div id="controllerSlider" class="slidecontainer">
+                                            <input type="range" min="1" max="100" value="0" class="slider" id="timeSlider" oninput="sliderInput()">
+                                        </div>
+                                    </div>    
                                 </model-viewer>
                             </div>
                         </div>
@@ -136,11 +145,6 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         </a>
                     </div>
-                    
-                    <!--<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fpbaret.github.io%2Ffiles%2Fprojects%2Fp5-diy-palette-desk%2Fdiy-palette-desk.stl&shading=flat&noborder=no&orientation=top&edges=yes&bgcolor=transparent&color=brown" style="border:0;margin:0;width:100%;height:80vh;"></iframe>-->                
-                </div>
-                <div class="col-md-12">
-                    <!--<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fpbaret.github.io%2Ffiles%2Fprojects%2Fp5-diy-palette-desk%2Fdiy-palette-desk.stl&shading=flat&noborder=no&orientation=top&edges=yes&bgcolor=transparent&color=brown" style="border:0;margin:0;width:100%;height:80vh;"></iframe>-->                
                 </div>
             </div>
         </div>
@@ -287,6 +291,7 @@
         <h5>© 2020 Copyright: Pierre BARET</h5>
     </section>
 
+    <script src="../js/p5.js"></script>
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/common.js"></script>
