@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pierre Baret Personal Website - Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/p6-diy-palette-table.css">
+
+    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
+</head>
+<body onload="set3DViewer()">
+
+    <a id="btnHome" class="btn btn-dark" href="../index.html#project-gallery" role="button"><i class="fas fa-home"></i></a>
+
+    <section id="section1" class="section-dark">
+        <h2 class="section-title">DIY PALETTE<br>SCANDINAVIAN COFFEE TABLE</h2>
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 my-auto">                    
+                    <img id="intro-img" class="img-fluid d-block m-auto" src="../images/projects/p6/diy-palette-table-8.jpg" alt="Project thumbnail">
+                </div>
+                <div class="col-md-6 my-auto sec1-txt">
+                    <div class="d-block m-auto">
+                        <p> 
+                            This project was my second DIY furniture project. It is a scandinavian coffee table made of palette wood planks. The palettes used were <a href="../images/projects/p5/palette-dimensions.jpg" target="_blank">Europe Palettes</a> that you can find
+                            at any warehouse, shop etc in Europe.
+                        </p>
+                        <p>
+                            I tried to build something a little more complex than my previous palette furniture project (the <a href="p5-diy-palette-desk.html" target="_blank">Scandinavian palette desk</a>). To do it you would need:
+                            <ul>
+                                <li>At least 3 Europe palettes (I used 4 as some planks broke during palette disassemble)</li>
+                                <li>Good Sander (with x40, x80 and x120 sands)</li>
+                                <li>Wood fixation technique (I used screws but glue should be good too). I also advise using wooden dowel pins for the bottom of the table.</li>
+                                <li>Set of 6" scandinavian table legs (French people can search "Pieds en épingle" on Amazon) -  <a target="_blank" href="https://www.amazon.fr/PrimeMatik-Pieds-Meubles-Bureau-4-Pack/dp/B076J614HV/ref=sr_1_5?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=ONTJ23VB4YVY&dchild=1&keywords=pied+epingle+15+cm&qid=1590695285&s=hi&sprefix=pied+epingle+%2Cdiy%2C161&sr=1-5">Like those</a></li>
+                                <li>Wood varnish (choose your prefered varnish color)</li>
+                            </ul>
+                        </p>
+                    </div>                    
+                </div>
+            </div>
+            <div class="row sec1-second-row">
+                <div class="col-md-12">
+                    <p>
+                        The dimensions of the wood part of the table are 98 x 70 x 18 cm. The realization is more complex than the <a href="p5-diy-palette-desk.html" target="_blank">desk</a> but stil very straight forward.
+                        I draw the blueprint of this project with my girlfriend from inspirations we saw on the web:
+                    </p>
+                    <img id="blueprint-img" class="img-fluid d-block m-auto" src="../images/projects/p6/diy-palette-table-plan.jpg" alt="blueprint">
+                    <p>
+                        Disassemble the palettes and sand the planks (with x40 then x80 sands). <span class="bold color7">All the planks have a 2cm thickness.</span> Each palette should give you:
+                        <ul>
+                            <li>4 planks of 120x10 cm</li>
+                            <li>4 planks of 120x14 cm</li>
+                            <li>3 planks of 80x14 cm</li>
+                        </ul>
+                    </p>
+                    <p>
+                        The assembly process is similar to the desk, I won't detail it here (feel free to contact me if you have any questions about it, or if you need tips). Like mentionned above,
+                        I advise using wooden dowel pins at least for assembling the bottom of the table. I also advise at least 4 layers of varnish on the outside of the table (especially the top),
+                        as a coffee table usage makes it more vulnerable. To complete this projects, you'll need the following list of planks:
+                        <ul>
+                            <li>Bottom: you need an 98 x 70 cm regular bottom. I made mine using <span class="bold">7 planks of 98x10 cm</span></li>
+                            <li>
+                                Top:
+                                <ul>
+                                    <li>6 planks of 42x14 cm</li>
+                                    <li>4 planks of 56x14 cm</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Middle: most complicated part.
+                                <ul>
+                                    <li>2 planks of 24x14 cm</li>
+                                    <li>2 planks of 30x14 cm</li>
+                                    <li>2 planks of 38x14 cm</li>
+                                    <li>2 planks of 40x14 cm</li>
+                                    <li>2 planks of 44x14 cm</li>
+                                    <li>2 planks of 54x14 cm</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <img style="padding-top: 15px;" class="img-fluid d-block m-auto" src="../images/projects/p6/diy-palette-table-list.png" alt="Planks list">
+                    </p>
+                    <p>
+                        Once assembled, the table will look like this:
+                        <img style="padding-top: 15px;" class="img-fluid d-block m-auto" src="../images/projects/p6/diy-palette-table-3d.png" alt="Planks assembled">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section1" class="section-dark">
+        <h3 class="section-title">3D Blueprint</h3>
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Feel free to download the <a href="../files/projects/p6-diy-palette-table/p6-diy-palette-table.rar">3D files</a> that I made as blueprint for this project.
+                    </p>
+                    <p>
+                        It shows how the different planks are composing the final table, just like in the following 3d views:
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="padding-bottom: 25px;">
+                    <div id="carousel3D" class="carousel" data-interval="0">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel3D" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel3D" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <model-viewer class="model3d" src="../files/projects/p6-diy-palette-table/table_assembled.glb"
+                                    camera-controls
+                                    camera-orbit="0deg 75deg 100%"
+                                    exposure="0.5"
+                                    poster=""
+                                    alt="3D blueprint of the table"
+                                    style="--poster-color: transparent;">
+                                </model-viewer>
+                            </div>
+                            <div class="carousel-item">
+                                <model-viewer id="animated" class="model3d" src="../files/projects/p6-diy-palette-table/anim.glb"
+                                    camera-controls
+                                    camera-orbit="0deg 75deg 100%"
+                                    exposure="0.5"
+                                    alt="3D blueprint of the table"
+                                    style="--poster-color: transparent;">
+                                    <div id="controllerContainer">
+                                        <div id="controllerBtn">
+                                            <p id="playBtn" onclick="play()"><i class="fas fa-play"></i></p>
+                                            <p id="pauseBtn" onclick="pause()"><i class="fas fa-pause"></i></p>
+                                        </div>
+                                        <div id="controllerSlider" class="slidecontainer">
+                                            <input type="range" min="1" max="100" value="0" class="slider" id="timeSlider" oninput="sliderInput()">
+                                        </div>
+                                    </div>    
+                                </model-viewer>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel3D" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel3D" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section1" class="section-grey">
+        <h3 class="section-title">Gallery</h3>
+        <div class="section-divider"></div>
+        <div class="container">
+            
+            <!-- Gallery thumbnails -->
+            <div class="row row-thumbnails">                        
+                <div class="div-thumbnails col-xs-4" data-target="#myModal" data-toggle="modal" data-slide-to="0">
+                    <img class="img-responsive" src="../images/projects/p6/diy-palette-table-0.jpg">
+                </div>
+                <div class="div-thumbnails col-xs-4" data-target="#myModal" data-toggle="modal" data-slide-to="1">
+                    <img class="img-responsive" src="../images/projects/p6/diy-palette-table-1.jpg">
+                </div>
+                <div class="div-thumbnails col-xs-4" data-target="#myModal" data-toggle="modal" data-slide-to="2">
+                    <img class="img-responsive" src="../images/projects/p6/diy-palette-table-2.jpg">
+                </div>
+                <div class="div-thumbnails col-xs-4" data-target="#myModal" data-toggle="modal" data-slide-to="3">
+                    <img class="img-responsive" src="../images/projects/p6/diy-palette-table-3.jpg">
+                </div>
+                <div class="div-thumbnails col-xs-4" data-target="#myModal" data-toggle="modal" data-slide-to="4">
+                    <img class="img-responsive" src="../images/projects/p6/diy-palette-table-4.jpg">
+                </div>
+                <div class="div-thumbnails col-xs-4" data-target="#myModal" data-toggle="modal" data-slide-to="5">
+                    <img class="img-responsive" src="../images/projects/p6/diy-palette-table-5.jpg">
+                </div>
+                <div class="div-thumbnails col-xs-4" data-target="#myModal" data-toggle="modal" data-slide-to="6">
+                    <img class="img-responsive" src="../images/projects/p6/diy-palette-table-6.jpg">
+                </div>
+                <div class="div-thumbnails col-xs-4" data-target="#myModal" data-toggle="modal" data-slide-to="7">
+                    <img class="img-responsive" src="../images/projects/p6/diy-palette-table-7.jpg">
+                </div>
+                <div class="div-thumbnails col-xs-4" data-target="#myModal" data-toggle="modal" data-slide-to="8">
+                    <img class="img-responsive" src="../images/projects/p6/diy-palette-table-8.jpg">
+                </div>
+            </div>    
+
+
+            <!-- Modal Carousel-->
+            <div class="modal fade carousel" id="myModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" title="Close"><span class="fas fa-window-close color1"></span></button>
+                        </div>
+                        <div class="modal-body">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myModal" data-slide-to="0" class="active"></li>
+                                <li data-target="#myModal" data-slide-to="1"></li>
+                                <li data-target="#myModal" data-slide-to="2"></li>
+                                <li data-target="#myModal" data-slide-to="3"></li>
+                                <li data-target="#myModal" data-slide-to="4"></li>
+                                <li data-target="#myModal" data-slide-to="5"></li>
+                                <li data-target="#myModal" data-slide-to="6"></li>
+                                <li data-target="#myModal" data-slide-to="7"></li>
+                                <li data-target="#myModal" data-slide-to="8"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block img-gallery-item" src="../images/projects/p6/diy-palette-table-0.jpg">
+                                    <div class="carousel-caption d-none d-md-block carousel-caption-dark">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-gallery-item" src="../images/projects/p6/diy-palette-table-1.jpg">
+                                    <div class="carousel-caption d-none d-md-block carousel-caption-dark">
+                                    </div>
+                                </div>                                
+                                <div class="carousel-item">
+                                    <img class="d-block img-gallery-item" src="../images/projects/p6/diy-palette-table-2.jpg">
+                                    <div class="carousel-caption d-none d-md-block carousel-caption-dark">
+                                    </div>
+                                </div>                                
+                                <div class="carousel-item">
+                                    <img class="d-block img-gallery-item" src="../images/projects/p6/diy-palette-table-3.jpg">
+                                    <div class="carousel-caption d-none d-md-block carousel-caption-dark">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-gallery-item" src="../images/projects/p6/diy-palette-table-4.jpg">
+                                    <div class="carousel-caption d-none d-md-block carousel-caption-dark">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-gallery-item" src="../images/projects/p6/diy-palette-table-5.jpg">
+                                    <div class="carousel-caption d-none d-md-block carousel-caption-dark">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-gallery-item" src="../images/projects/p6/diy-palette-table-6.jpg">
+                                    <div class="carousel-caption d-none d-md-block carousel-caption-dark">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-gallery-item" src="../images/projects/p6/diy-palette-table-7.jpg">
+                                    <div class="carousel-caption d-none d-md-block carousel-caption-dark">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-gallery-item" src="../images/projects/p6/diy-palette-table-8.jpg">
+                                    <div class="carousel-caption d-none d-md-block carousel-caption-dark">
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myModal" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon bgcolor1" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myModal" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon bgcolor1" aria-hidden="true"></span>
+                            </a>                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <button onclick="topFunction()" id="topBtn" title="Back to top"><i class="fas fa-arrow-circle-up"></i></button>
+
+    <section class="project-footer-container section-dark">
+        <h5>© 2020 Copyright: Pierre BARET</h5>
+    </section>
+
+    <script src="../js/p6.js"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/common.js"></script>
+
+
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+    </script>
+
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script nomodule
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+    </script>
+</body>

@@ -110,3 +110,60 @@
     width: 100%;
     height: 50vh;
 }
+
+#controllerContainer {
+    width: 60%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+#controllerBtn, #controllerSlider {
+    display: inline-block;
+}
+#controllerBtn {
+    width: 10%;
+}
+#controllerSlider{
+    width: 80%;
+}
+
+#playBtn, #pauseBtn {
+    margin: auto;
+    text-align: center;
+    color: var(--color6);
+}
+
+#playBtn:hover, #pauseBtn:hover {
+    color: var(--color3);
+}
+
+#timeSlider {
+    width: 100%;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    background-color: var(--color6);
+    appearance: none;
+    height: 15px; /* Specified height */
+    outline: none; /* Remove outline */
+    border-radius: 5px;  
+}
+
+#timeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: var(--color7);
+    cursor: pointer;
+}
+  
+#timeSlider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--color7);
+    cursor: pointer;
+}
+
