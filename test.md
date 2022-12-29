@@ -1,8 +1,8 @@
 ---
-title: Test wirting a markdown page
+title: Test writing a markdown page
 ---
 
-# Test wirting a markdown page
+# Test writing a markdown page
 
 Some content might be written in markdown instead of HTML/CSS
 
