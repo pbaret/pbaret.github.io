@@ -1,3 +1,4 @@
+{% include_relative test.md %}
 ---
 title: Test writing a markdown page
 ---
