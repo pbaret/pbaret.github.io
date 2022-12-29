@@ -1,3 +1,7 @@
+---
+title: Test wirting a markdown page
+---
+
 # Test wirting a markdown page
 
 Some content might be written in markdown instead of HTML/CSS
